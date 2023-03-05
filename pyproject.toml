@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "project-template"
+version = "0.1.0"
+description = "Project template for pyspark"
+authors = ["Hinny Tsang <mhtsangab@connect.ust.hk>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyspark = "^3.3.2"
+pandas = "^1.5.3"
+numpy = "^1.24.2"
+seaborn = "^0.12.2"
+pyairtable = "^1.4.0"
+python-dotenv = "^1.0.0"
+pyyaml = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+venv-pack = "^0.2.0"
+autopep8 = "^2.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+test-airtable = "src.utils.airtable:main"
