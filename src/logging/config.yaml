@@ -1,0 +1,25 @@
+version: 1
+formatters:
+  colored:
+    (): src.logging.formatter.ColoredFormatter
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    colors:
+      DEBUG: "1;36" # cyan
+      INFO: "1;32" # green
+      WARNING: "1;33" # yellow
+      ERROR: "1;31" # red
+      CRITICAL: "1;35" # magenta
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: colored
+    stream: ext://sys.stdout
+loggers:
+  project-logger:
+    level: DEBUG
+    handlers: [console]
+    propagate: no
+root:
+  level: WARNING
+  handlers: [console]
