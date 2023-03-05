@@ -19,6 +19,7 @@ pyyaml = "^6.0"
 [tool.poetry.group.dev.dependencies]
 venv-pack = "^0.2.0"
 autopep8 = "^2.0.2"
+poethepoet = "^0.18.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -26,3 +27,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 test-airtable = "src.utils.airtable:main"
+
+[tool.poe.tasks]
+pack-venv = "poetry run ./scripts/pack-venv.sh"
