@@ -1,5 +1,36 @@
 # Template project for pyspark
 
+It is a recommended file structure for project including the following:
+1. Airtable
+2. Pyspark
+3. Oracle SQL
+
+```
+├── .env.template
+├── .gitignore
+├── README.md
+├── config
+│   └── airtable.yaml
+├── logs
+│   └── README.md
+├── poetry.lock
+├── pyproject.toml
+├── requirements.txt
+├── scripts
+│   └── pack-venv.sh
+├── shell.nix
+└── src
+    ├── logger
+    │   ├── __init__.py
+    │   ├── config.yaml
+    │   ├── formatter.py
+    │   └── logger.py
+    └── utils
+        ├── __init__.py
+        ├── airtable.py
+        └── utils.py
+```
+
 ## Non-nix user
 
 Below are the options
