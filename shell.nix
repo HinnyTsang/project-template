@@ -6,7 +6,7 @@ pkgs.mkShell rec {
     pkgs.python3
     pkgs.poetry
     pkgs.zlib
-    pkgs.jdk19
+    pkgs.jdk17
   ];
 
   shellHook = ''
