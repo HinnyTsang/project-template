@@ -8,7 +8,7 @@ import yaml
 
 
 # Read the config file
-with open("src/logging/config.yaml", "r", encoding="utf-8") as stream:
+with open("src/logger/config.yaml", "r", encoding="utf-8") as stream:
     config = yaml.safe_load(stream)
 
 # Apply the configuration

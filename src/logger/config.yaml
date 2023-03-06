@@ -1,7 +1,7 @@
 version: 1
 formatters:
   colored:
-    (): src.logging.formatter.ColoredFormatter
+    (): src.logger.formatter.ColoredFormatter
     format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     colors:
       DEBUG: "1;36" # cyan
