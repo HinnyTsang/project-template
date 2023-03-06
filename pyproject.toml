@@ -29,4 +29,5 @@ build-backend = "poetry.core.masonry.api"
 test-airtable = "src.utils.airtable:main"
 
 [tool.poe.tasks]
+export-requriements = "poetry export --without-hashes --format=requirements.txt --output requirements.txt"
 pack-venv = "poetry run ./scripts/pack-venv.sh"
