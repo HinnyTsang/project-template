@@ -3,10 +3,10 @@
 pkgs.mkShell rec {
 
   buildInputs = [
-    pkgs.python3
     pkgs.poetry
-    pkgs.zlib
+    pkgs.python3
     pkgs.jdk17
+    pkgs.zlib
   ];
 
   shellHook = ''
